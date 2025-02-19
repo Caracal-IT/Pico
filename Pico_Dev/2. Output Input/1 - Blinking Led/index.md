@@ -3,7 +3,7 @@
 Welcome to your first hardware project with the Raspberry Pi Pico !  
 In this lesson, we’ll learn how to make an LED blink using MicroPython.   
 This simple project is a great way to get started with physical computing   
-and understand how to control hardware with code.ertreert
+and understand how to control hardware with code.
 
 [LED](../../Components/LED/index.md)  
 
