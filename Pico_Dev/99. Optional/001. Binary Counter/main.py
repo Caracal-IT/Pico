@@ -1,7 +1,7 @@
 import machine
 import utime
 
-pin1 = machine.Pin('LED', machine.Pin.OUT)
+pin1 = machine.Pin(11, machine.Pin.OUT)
 pin2 = machine.Pin(12, machine.Pin.OUT)
 pin3 = machine.Pin(13, machine.Pin.OUT)
 pin4 = machine.Pin(14, machine.Pin.OUT)
