@@ -128,3 +128,39 @@ Let’s break down the key parts of the code:
     ``` 
 
 ## Experimenting Further
+
+Feel free to experiment with the code:
+
+* Change the Speed:
+  - Adjust the delay in **utime.sleep(0.2)** to make the LEDs light up faster or slower.
+  
+* Reverse the Order:
+  - Use reversed(leds) to reverse the sequence of the LEDs.
+  
+    ```python
+    for led in reversed(leds):
+        led.value(1)
+        utime.sleep(0.2)
+    ```
+
+* Create a Ping-Pong Effect:
+  - Make the LEDs light up from left to right and then back from right to left.
+  
+    ```python
+    while True:
+        for led in leds:
+            led.value(1)
+            utime.sleep(0.1)
+        for led in reversed(leds):
+            led.value(0)
+            utime.sleep(0.1)
+    ```
+## Conclusion
+
+By controlling each LED individually, we’ve created a simple yet effective level display   
+using the Raspberry Pi Pico 2 W. This project demonstrates the power of lists and loops   
+in Python, allowing us to manage multiple outputs efficiently.  
+
+Understanding how to work with multiple GPIO pins and using programming structures like   
+lists and loops is essential for more complex projects, such as creating animations,   
+controlling multiple sensors, or building interactive devices.  

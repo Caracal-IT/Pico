@@ -14,9 +14,9 @@ while True:
     # Turn on LEDs one by one to simulate increasing level
     for led in leds:
         led.value(1)  # Turn the LED on
-        utime.sleep(0.2)
+        utime.sleep(0.1)
     # Turn off LEDs one by one to simulate decreasing level
-    for led in leds:
+    for led in reversed(leds):
         led.value(0)  # Turn the LED off
         utime.sleep(0.2)
 
